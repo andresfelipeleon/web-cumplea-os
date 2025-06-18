@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños ❤️🎂!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden">
+    <!-- Globos flotantes -->
+    <div id="balloons-container"></div>
+    
+    <!-- Confeti -->
+    <div id="confetti-container"></div>
+    
+    <div class="max-w-2xl w-full bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 text-center message">
+        <h1 class="title text-5xl md:text-6xl text-pink-500 mb-6">¡Feliz Cumpleaños!</h1>
+        
+        <div class="cake mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mx-auto text-pink-200">
+               <path fill="#db2777" d="M8 6v3.999h3V6h2v3.999h3V6h2v3.999L19 10a3 3 0 0 1 2.995 2.824L22 13v1c0 1.014-.377 1.94-.999 2.645L21 21a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4.36a4 4 0 0 1-.972-2.182l-.022-.253L2 14v-1a3 3 0 0 1 2.824-2.995L5 10l1-.001V6zm11 6H5a1 1 0 0 0-.993.883L4 13v.971l.003.147A2 2 0 0 0 6 16a2 2 0 0 0 1.98-1.7l.015-.153l.005-.176c.036-1.248 1.827-1.293 1.989-.134l.01.134l.004.147a2 2 0 0 0 3.992.031l.012-.282c.124-1.156 1.862-1.156 1.986 0l.013.282a2 2 0 0 0 3.988 0L20 14v-1a1 1 0 0 0-.883-.993zM7 1c1.32.871 1.663 2.088 1.449 2.888a1.5 1.5 0 0 1-2.898-.776C5.85 2.002 7 2.5 7 1m5 0c1.32.871 1.663 2.088 1.449 2.888a1.5 1.5 0 1 1-2.898-.776C10.85 2.002 12 2.5 12 1m5 0c1.32.871 1.663 2.088 1.449 2.888a1.5 1.5 0 1 1-2.898-.776C15.85 2.002 17 2.5 17 1"/>
+            </svg>
+        </div>
+        
+        <p class="text-lg md:text-xl text-gray-700 mb-6">
+            Hoy es un día especial porque celebramos tus 23 años ❤️. 
+            Que este nuevo año de vida esté lleno de alegría, amor y sueños cumplidos.
+        </p>
+        
+        <div class="mb-8">
+            <div class="inline-block transform hover:scale-110 transition-transform duration-300">
+                <button id="surprise-btn" class="btn-glow bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold py-3 px-6 rounded-full text-lg">
+                    ¡Haz clic para sorpresa!
+                </button>
+            </div>
+        </div>
+        
+        <div id="surprise-message" class="hidden bg-pink-100 border-l-4 border-pink-500 p-4 mb-6 rounded-lg text-left">
+            <p class="text-pink-800">🎉 ¡Eres una persona increíble! Que todos tus deseos se hagan realidad. 🎂</p>
+        </div>
+        
+        <div class="flex justify-center space-x-4">
+            <div class="heart animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-500">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+            </div>
+            <div class="star animate-bounce delay-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-500">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </div>
+            <div class="gift animate-bounce delay-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-500">
+                    <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                    <rect x="2" y="7" width="20" height="5"></rect>
+                    <line x1="12" y1="22" x2="12" y2="7"></line>
+                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
